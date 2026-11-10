@@ -1,0 +1,138 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
+}
+
+.panel {
+  width: 420px;
+  max-width: 100%;
+  height: 100%;
+  background: var(--color-surface);
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--color-text-secondary);
+  padding: var(--spacing-xs);
+  line-height: 1;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.heroIcon {
+  font-size: 24px;
+}
+
+.heroLabel {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.heroBadge {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+.completed {
+  background: var(--color-badge-completed);
+  color: var(--color-badge-completed-text);
+}
+
+.cancelled {
+  background: var(--color-badge-cancelled);
+  color: var(--color-badge-cancelled-text);
+}
+
+.failed {
+  background: var(--color-badge-failed);
+  color: var(--color-badge-failed-text);
+}
+
+.paid {
+  background: var(--color-badge-paid);
+  color: var(--color-badge-paid-text);
+}
+
+.received {
+  background: var(--color-badge-received);
+  color: var(--color-badge-received-text);
+}
+
+.refunded {
+  background: var(--color-badge-refunded);
+  color: var(--color-badge-refunded-text);
+}
+
+.reversed {
+  background: var(--color-badge-reversed);
+  color: var(--color-badge-reversed-text);
+}
+
+.amount {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  padding: var(--spacing-md) 0;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.rowLabel {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.rowValue {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}

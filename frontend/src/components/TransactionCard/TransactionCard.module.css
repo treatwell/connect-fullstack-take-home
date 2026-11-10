@@ -1,0 +1,106 @@
+.card {
+  display: flex;
+  align-items: center;
+  background: var(--color-surface);
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-family);
+}
+
+.card:last-child {
+  border-bottom: none;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.detail {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--spacing-xs);
+  flex-shrink: 0;
+}
+
+.amount {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.negative {
+  color: var(--color-negative);
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.completed {
+  background: var(--color-badge-completed);
+  color: var(--color-badge-completed-text);
+}
+
+.cancelled {
+  background: var(--color-badge-cancelled);
+  color: var(--color-badge-cancelled-text);
+}
+
+.failed {
+  background: var(--color-badge-failed);
+  color: var(--color-badge-failed-text);
+}
+
+.paid {
+  background: var(--color-badge-paid);
+  color: var(--color-badge-paid-text);
+}
+
+.received {
+  background: var(--color-badge-received);
+  color: var(--color-badge-received-text);
+}
+
+.refunded {
+  background: var(--color-badge-refunded);
+  color: var(--color-badge-refunded-text);
+}
+
+.reversed {
+  background: var(--color-badge-reversed);
+  color: var(--color-badge-reversed-text);
+}
