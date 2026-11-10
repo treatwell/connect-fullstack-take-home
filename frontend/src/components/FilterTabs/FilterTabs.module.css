@@ -1,0 +1,16 @@
+.tabs {
+  display: flex;
+  gap: var(--spacing-sm);
+  overflow-x: auto;
+}
+
+.tab {
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-family: var(--font-family);
+  white-space: nowrap;
+}
+
